@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  blog:
+    build:
+      context: .
+    ports:
+      - 8080:9292
+    depends_on:
+      - blog_db
+    environment:
+      MONGODB_HOST_AND_PORT: blog_db:27017
+
+  blog_db:
+    image: mongo:3.0.15

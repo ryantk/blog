@@ -1,0 +1,12 @@
+defaults: &defaults
+  clients:
+    default:
+      database: blog_db
+      hosts:
+        - <%= ENV.fetch('MONGODB_HOST_AND_PORT', 'localhost:27017') %>
+
+development:
+  <<: *defaults
+
+production:
+  <<: *defaults
