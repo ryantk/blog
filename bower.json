@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "homepage": "?",
+  "authors": [
+    "Ryan Kendall <ryankendallt@gmail.com>"
+  ],
+  "description": "Ryan's Blog",
+  "main": "?",
+  "keywords": [
+    "?"
+  ],
+  "license": "?",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "^2.4.3"
+  }
+}
